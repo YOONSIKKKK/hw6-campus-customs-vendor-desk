@@ -1,0 +1,836 @@
+{
+  "summary": {
+    "documents": 12,
+    "by_setup": {
+      "uncached": {
+        "documents": 12,
+        "model_calls": 24,
+        "input_tokens": 271174,
+        "fresh_input_tokens": 3024,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 268150,
+        "output_tokens": 2370,
+        "total_cost_usd": 0.03500615,
+        "avg_cost_per_doc_usd": 0.002917179166666667,
+        "calls_reporting_cache_reads": 0,
+        "decisions_correct": 8,
+        "fields_correct": 64,
+        "fields_total": 72,
+        "projection_1000_per_day_30_days_usd": 87.515375
+      },
+      "cached": {
+        "documents": 12,
+        "model_calls": 24,
+        "input_tokens": 270443,
+        "fresh_input_tokens": 3024,
+        "cache_read_tokens": 264927,
+        "cache_write_tokens": 2492,
+        "output_tokens": 2558,
+        "total_cost_usd": 0.00454217,
+        "avg_cost_per_doc_usd": 0.0003785141666666667,
+        "calls_reporting_cache_reads": 24,
+        "decisions_correct": 8,
+        "fields_correct": 64,
+        "fields_total": 72,
+        "projection_1000_per_day_30_days_usd": 11.355425
+      }
+    },
+    "savings_usd": 0.03046398,
+    "savings_pct": 87.02465138268562,
+    "uncached_is_clean": true
+  },
+  "runs": [
+    {
+      "setup": "uncached",
+      "doc": "p01_bluehen_quote.html",
+      "doc_position_in_setup": 1,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22607,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 22355,
+        "fresh_input_tokens": 252,
+        "output_tokens": 167,
+        "total_tokens": 22774,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.0,
+        "cache_write_usd": 0.002794375,
+        "output_usd": 8.35e-05,
+        "total_usd": 0.0029030749999999998
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "uncached",
+      "doc": "p02_elmcity_quote.html",
+      "doc_position_in_setup": 2,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22610,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 22358,
+        "fresh_input_tokens": 252,
+        "output_tokens": 198,
+        "total_tokens": 22808,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.0,
+        "cache_write_usd": 0.00279475,
+        "output_usd": 9.9e-05,
+        "total_usd": 0.00291895
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 4,
+        "fields_total": 6,
+        "decision_correct": false,
+        "mismatches": {
+          "unit_price": {
+            "got": 5.11,
+            "expected": 9.83
+          },
+          "decision": {
+            "got": "recommend",
+            "expected": "do_not_recommend"
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "setup": "uncached",
+      "doc": "p03_ivyprint_catalog.html",
+      "doc_position_in_setup": 3,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22610,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 22358,
+        "fresh_input_tokens": 252,
+        "output_tokens": 299,
+        "total_tokens": 22909,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.0,
+        "cache_write_usd": 0.00279475,
+        "output_usd": 0.0001495,
+        "total_usd": 0.0029694499999999998
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 4,
+        "fields_total": 6,
+        "decision_correct": false,
+        "mismatches": {
+          "vendor": {
+            "got": "Chapel Street Goods",
+            "expected": "Ivy Print Co"
+          },
+          "decision": {
+            "got": "recommend",
+            "expected": "do_not_recommend"
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "setup": "uncached",
+      "doc": "p04_harborstitch_quote.html",
+      "doc_position_in_setup": 4,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22599,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 22347,
+        "fresh_input_tokens": 252,
+        "output_tokens": 188,
+        "total_tokens": 22787,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.0,
+        "cache_write_usd": 0.002793375,
+        "output_usd": 9.4e-05,
+        "total_usd": 0.0029125749999999997
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "uncached",
+      "doc": "p05_maplemills_quote.pdf",
+      "doc_position_in_setup": 5,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22577,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 22325,
+        "fresh_input_tokens": 252,
+        "output_tokens": 176,
+        "total_tokens": 22753,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.0,
+        "cache_write_usd": 0.002790625,
+        "output_usd": 8.8e-05,
+        "total_usd": 0.002903825
+      },
+      "decision": "do_not_recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "uncached",
+      "doc": "p06_qtextile_quote.pdf",
+      "doc_position_in_setup": 6,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22617,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 22365,
+        "fresh_input_tokens": 252,
+        "output_tokens": 191,
+        "total_tokens": 22808,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.0,
+        "cache_write_usd": 0.002795625,
+        "output_usd": 9.55e-05,
+        "total_usd": 0.002916325
+      },
+      "decision": "do_not_recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "uncached",
+      "doc": "p07_longwharf_quote.pdf",
+      "doc_position_in_setup": 7,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22596,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 22344,
+        "fresh_input_tokens": 252,
+        "output_tokens": 194,
+        "total_tokens": 22790,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.0,
+        "cache_write_usd": 0.002793,
+        "output_usd": 9.7e-05,
+        "total_usd": 0.0029151999999999997
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 4,
+        "fields_total": 6,
+        "decision_correct": false,
+        "mismatches": {
+          "lead_time_days": {
+            "got": 7,
+            "expected": 35
+          },
+          "decision": {
+            "got": "recommend",
+            "expected": "do_not_recommend"
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "setup": "uncached",
+      "doc": "p08_chapelst_email.eml",
+      "doc_position_in_setup": 8,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22593,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 22341,
+        "fresh_input_tokens": 252,
+        "output_tokens": 180,
+        "total_tokens": 22773,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.0,
+        "cache_write_usd": 0.002792625,
+        "output_usd": 9e-05,
+        "total_usd": 0.0029078249999999997
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "uncached",
+      "doc": "p09_westville_email.eml",
+      "doc_position_in_setup": 9,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22591,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 22339,
+        "fresh_input_tokens": 252,
+        "output_tokens": 163,
+        "total_tokens": 22754,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.0,
+        "cache_write_usd": 0.002792375,
+        "output_usd": 8.15e-05,
+        "total_usd": 0.002899075
+      },
+      "decision": "do_not_recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "uncached",
+      "doc": "p10_eastrock_email.eml",
+      "doc_position_in_setup": 10,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22617,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 22365,
+        "fresh_input_tokens": 252,
+        "output_tokens": 250,
+        "total_tokens": 22867,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.0,
+        "cache_write_usd": 0.002795625,
+        "output_usd": 0.000125,
+        "total_usd": 0.002945825
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "uncached",
+      "doc": "p11_yorkst_quote.html",
+      "doc_position_in_setup": 11,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22568,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 22316,
+        "fresh_input_tokens": 252,
+        "output_tokens": 175,
+        "total_tokens": 22743,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.0,
+        "cache_write_usd": 0.0027895,
+        "output_usd": 8.75e-05,
+        "total_usd": 0.0029021999999999997
+      },
+      "decision": "do_not_recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "uncached",
+      "doc": "p12_bluehen_quote.pdf",
+      "doc_position_in_setup": 12,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22589,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 22337,
+        "fresh_input_tokens": 252,
+        "output_tokens": 189,
+        "total_tokens": 22778,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.0,
+        "cache_write_usd": 0.002792125,
+        "output_usd": 9.45e-05,
+        "total_usd": 0.002911825
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 4,
+        "fields_total": 6,
+        "decision_correct": false,
+        "mismatches": {
+          "unit_price": {
+            "got": 17.44,
+            "expected": 27.72
+          },
+          "decision": {
+            "got": "recommend",
+            "expected": "do_not_recommend"
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "setup": "cached",
+      "doc": "p01_bluehen_quote.html",
+      "doc_position_in_setup": 1,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22544,
+        "cache_read_tokens": 22076,
+        "cache_write_tokens": 216,
+        "fresh_input_tokens": 252,
+        "output_tokens": 239,
+        "total_tokens": 22783,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.00022076,
+        "cache_write_usd": 2.7e-05,
+        "output_usd": 0.0001195,
+        "total_usd": 0.00039245999999999997
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "cached",
+      "doc": "p02_elmcity_quote.html",
+      "doc_position_in_setup": 2,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22547,
+        "cache_read_tokens": 22077,
+        "cache_write_tokens": 218,
+        "fresh_input_tokens": 252,
+        "output_tokens": 187,
+        "total_tokens": 22734,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.00022077,
+        "cache_write_usd": 2.725e-05,
+        "output_usd": 9.35e-05,
+        "total_usd": 0.00036671999999999996
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 4,
+        "fields_total": 6,
+        "decision_correct": false,
+        "mismatches": {
+          "unit_price": {
+            "got": 5.11,
+            "expected": 9.83
+          },
+          "decision": {
+            "got": "recommend",
+            "expected": "do_not_recommend"
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "setup": "cached",
+      "doc": "p03_ivyprint_catalog.html",
+      "doc_position_in_setup": 3,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22545,
+        "cache_read_tokens": 22077,
+        "cache_write_tokens": 216,
+        "fresh_input_tokens": 252,
+        "output_tokens": 385,
+        "total_tokens": 22930,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.00022077,
+        "cache_write_usd": 2.7e-05,
+        "output_usd": 0.0001925,
+        "total_usd": 0.00046546999999999995
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 4,
+        "fields_total": 6,
+        "decision_correct": false,
+        "mismatches": {
+          "vendor": {
+            "got": "Chapel Street Goods",
+            "expected": "Ivy Print Co"
+          },
+          "decision": {
+            "got": "recommend",
+            "expected": "do_not_recommend"
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "setup": "cached",
+      "doc": "p04_harborstitch_quote.html",
+      "doc_position_in_setup": 4,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22537,
+        "cache_read_tokens": 22079,
+        "cache_write_tokens": 206,
+        "fresh_input_tokens": 252,
+        "output_tokens": 203,
+        "total_tokens": 22740,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.00022079,
+        "cache_write_usd": 2.575e-05,
+        "output_usd": 0.0001015,
+        "total_usd": 0.00037324000000000005
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "cached",
+      "doc": "p05_maplemills_quote.pdf",
+      "doc_position_in_setup": 5,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22513,
+        "cache_read_tokens": 22077,
+        "cache_write_tokens": 184,
+        "fresh_input_tokens": 252,
+        "output_tokens": 179,
+        "total_tokens": 22692,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.00022077,
+        "cache_write_usd": 2.3e-05,
+        "output_usd": 8.95e-05,
+        "total_usd": 0.00035847
+      },
+      "decision": "do_not_recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "cached",
+      "doc": "p06_qtextile_quote.pdf",
+      "doc_position_in_setup": 6,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22557,
+        "cache_read_tokens": 22077,
+        "cache_write_tokens": 228,
+        "fresh_input_tokens": 252,
+        "output_tokens": 166,
+        "total_tokens": 22723,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.00022077,
+        "cache_write_usd": 2.85e-05,
+        "output_usd": 8.3e-05,
+        "total_usd": 0.00035747
+      },
+      "decision": "do_not_recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "cached",
+      "doc": "p07_longwharf_quote.pdf",
+      "doc_position_in_setup": 7,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22532,
+        "cache_read_tokens": 22077,
+        "cache_write_tokens": 203,
+        "fresh_input_tokens": 252,
+        "output_tokens": 185,
+        "total_tokens": 22717,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.00022077,
+        "cache_write_usd": 2.5375e-05,
+        "output_usd": 9.25e-05,
+        "total_usd": 0.000363845
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 4,
+        "fields_total": 6,
+        "decision_correct": false,
+        "mismatches": {
+          "lead_time_days": {
+            "got": 7,
+            "expected": 35
+          },
+          "decision": {
+            "got": "recommend",
+            "expected": "do_not_recommend"
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "setup": "cached",
+      "doc": "p08_chapelst_email.eml",
+      "doc_position_in_setup": 8,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22538,
+        "cache_read_tokens": 22078,
+        "cache_write_tokens": 208,
+        "fresh_input_tokens": 252,
+        "output_tokens": 183,
+        "total_tokens": 22721,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.00022078,
+        "cache_write_usd": 2.6e-05,
+        "output_usd": 9.15e-05,
+        "total_usd": 0.00036348
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "cached",
+      "doc": "p09_westville_email.eml",
+      "doc_position_in_setup": 9,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22534,
+        "cache_read_tokens": 22078,
+        "cache_write_tokens": 204,
+        "fresh_input_tokens": 252,
+        "output_tokens": 170,
+        "total_tokens": 22704,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.00022078,
+        "cache_write_usd": 2.55e-05,
+        "output_usd": 8.5e-05,
+        "total_usd": 0.00035648000000000006
+      },
+      "decision": "do_not_recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "cached",
+      "doc": "p10_eastrock_email.eml",
+      "doc_position_in_setup": 10,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22557,
+        "cache_read_tokens": 22078,
+        "cache_write_tokens": 227,
+        "fresh_input_tokens": 252,
+        "output_tokens": 216,
+        "total_tokens": 22773,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.00022078,
+        "cache_write_usd": 2.8375e-05,
+        "output_usd": 0.000108,
+        "total_usd": 0.000382355
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "cached",
+      "doc": "p11_yorkst_quote.html",
+      "doc_position_in_setup": 11,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22509,
+        "cache_read_tokens": 22077,
+        "cache_write_tokens": 180,
+        "fresh_input_tokens": 252,
+        "output_tokens": 188,
+        "total_tokens": 22697,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.00022077,
+        "cache_write_usd": 2.25e-05,
+        "output_usd": 9.4e-05,
+        "total_usd": 0.00036247
+      },
+      "decision": "do_not_recommend",
+      "accuracy": {
+        "fields_correct": 6,
+        "fields_total": 6,
+        "decision_correct": true,
+        "mismatches": {}
+      },
+      "error": null
+    },
+    {
+      "setup": "cached",
+      "doc": "p12_bluehen_quote.pdf",
+      "doc_position_in_setup": 12,
+      "model_calls": 2,
+      "usage": {
+        "input_tokens": 22530,
+        "cache_read_tokens": 22076,
+        "cache_write_tokens": 202,
+        "fresh_input_tokens": 252,
+        "output_tokens": 257,
+        "total_tokens": 22787,
+        "requests": 2
+      },
+      "cost": {
+        "fresh_input_usd": 2.5200000000000003e-05,
+        "cache_read_usd": 0.00022076,
+        "cache_write_usd": 2.525e-05,
+        "output_usd": 0.0001285,
+        "total_usd": 0.00039970999999999995
+      },
+      "decision": "recommend",
+      "accuracy": {
+        "fields_correct": 4,
+        "fields_total": 6,
+        "decision_correct": false,
+        "mismatches": {
+          "unit_price": {
+            "got": 17.44,
+            "expected": 27.72
+          },
+          "decision": {
+            "got": "recommend",
+            "expected": "do_not_recommend"
+          }
+        }
+      },
+      "error": null
+    }
+  ]
+}

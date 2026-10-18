@@ -1,0 +1,33 @@
+{
+  "model": "gpt-6-luna",
+  "handbook_file": "data/shop_handbook.md",
+  "raw_size": {
+    "characters": 28903,
+    "whitespace_words": 6127,
+    "lines": 339
+  },
+  "tiktoken": {
+    "o200k_base": 10058,
+    "cl100k_base": 10184
+  },
+  "empirical": {
+    "input_tokens_with_handbook": 10071,
+    "input_tokens_without_handbook": 13,
+    "handbook_tokens": 10058
+  },
+  "prices_per_1m": {
+    "input_per_1m": 0.1,
+    "cached_input_per_1m": 0.01,
+    "cache_write_per_1m": 0.125,
+    "output_per_1m": 0.5
+  },
+  "cost_usd": {
+    "uncached_1_call": 0.0010058,
+    "uncached_1000_calls": 1.0058,
+    "cache_write_1_call": 0.00125725,
+    "cached_read_1_call": 0.00010057999999999999,
+    "cached_1000_calls_realistic": 0.10173666999999999,
+    "cached_1000_calls_all_hits": 0.10057999999999999,
+    "savings_1000_calls": 0.90406333
+  }
+}

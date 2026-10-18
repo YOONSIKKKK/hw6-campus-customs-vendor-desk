@@ -1,0 +1,10 @@
+# Campus Customs vendor desk agent - HW 6
+# Install with:  python -m pip install -r requirements.txt
+
+pydantic-ai-slim[openai]==2.57.0   # agent framework + the OpenAI-compatible client
+openai==3.35.1                     # used directly by smoke_test.py / count_handbook.py
+python-dotenv==1.2.4               # loads PORTKEY_API_KEY from .env
+tiktoken==0.14.0                   # offline token counting (Problem 2)
+beautifulsoup4==4.15.0             # HTML parsing + the HTML sanitiser (defense layer 1)
+pypdf==6.21.1                      # raw PDF text extraction (undefended mode)
+pymupdf==1.28.2                    # layout-aware PDF extraction + rendering (defense layer 1)

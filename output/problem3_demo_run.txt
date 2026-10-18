@@ -1,0 +1,23 @@
+=== p01_bluehen_quote.html  (cached) ===
+vendor          : Blue Hen Apparel
+sku             : CC-HD-006
+unit_price      : 21.8
+lead_time_days  : 14
+min_order       : 240
+decision        : recommend
+reason          : All four checks pass: Blue Hen Apparel is approved, the $21.80 quoted price is at or below the $25.44 catalogue maximum, lead time is 14 days, and the minimum order is 240 units.
+tools used      : ['read_document', 'final_result']
+tokens          : input=22495 (fresh=252, cache_read=22060, cache_write=183) output=125
+cost            : $0.000331
+
+=== p08_chapelst_email.eml  (cached) ===
+vendor          : Chapel Street Goods
+sku             : CC-PG-010
+unit_price      : 4.27
+lead_time_days  : 6
+min_order       : 250
+decision        : recommend
+reason          : The approved-vendor, price, lead-time, and minimum-order checks all pass.
+tools used      : ['read_document', 'final_result']
+tokens          : input=22489 (fresh=252, cache_read=22062, cache_write=175) output=152
+cost            : $0.000344
